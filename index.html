@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Restaurant Web Site</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!--! Header section Start  -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+      <div class="buttons">
+
+        <button id="search-btn">
+        <i class="fas fa-search"></i>
+        </button>
+
+        <button id="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+
+
+        <button id="menu-btn">                <!--!   İlk başta menu bar görünmeyecek ama ekran kuculurse görünecek o yüzden id attık     -->
+        <i class="fas fa-bars"></i> 
+        </button> 
+
+      </div>
+
+      <div class="search-form ">
+        <input type="text" class="search-input" id="search-box" placeholder="search-here">
+        <i class="fas fa-search"> </i>
+
+      </div>
+                 <div class="cart-items-container"> 
+                  <div class="cart-item">
+                    <i class="fas fa-times"> </i>
+                    <img src="images/menu-1.png" alt="menu">
+                    <div class="content">
+                      <h3>cart item 01</h3>
+                      <div class="price">$10.99/- </div>
+                    </div>
+                  </div>
+                  <div class="cart-item">
+                    <i class="fas fa-times"> </i>
+                    <img src="images/menu-2.png" alt="menu">
+                    <div class="content">
+                      <h3>cart item 02</h3>
+                      <div class="price">$9.99/- </div>
+                    </div>
+                  </div>
+                  <div class="cart-item">
+                    <i class="fas fa-times"> </i>
+                    <img src="images/menu-3.png" alt="menu">
+                    <div class="content">
+                      <h3>cart item 03</h3>
+                      <div class="price">$19.99/- </div>
+                    </div>
+                  </div><div class="cart-item">
+                    <i class="fas fa-times"> </i>
+                    <img src="images/menu-4.png" alt="menu">
+                    <div class="content">
+                      <h3>cart item 04</h3>
+                      <div class="price">$15.99/- </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn">checkout now</a>
+                        </div>
+
+    </header>
+    <!--! Header section finish  -->
+    <!--! Home section Start  -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>EXPRESS HOME DELİVERY</h3>
+        <p>
+          Burada bir şeyler yazıyor burası paragraf icin ayrılmıs bir yer uzun
+          uzun yazim ki göze hitap etsin
+        </p>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </section>
+    <!--! buton eklemek icin -->
+    <!--! Home section finish  -->
+
+    <!--! Menu section Start  -->
+    <section class="menu" id="menu">
+      <h1 class="heading">our <span> menu</span></h1>
+      <div class="box-contanier">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/menu-1.png" alt="menu" />
+            <span class="menu-category">PIZZA</span>
+            <h3>Mix</h3>
+            <div class="Price">$10.99 <span>$14.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/menu-2.png" alt="menu" />
+            <span class="menu-category">BURGER</span>
+            <h3>Whooper</h3>
+            <div class="Price">$9.99 <span>$13.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/menu-3.png" alt="menu" />
+            <span class="menu-category">PIZZA</span>
+            <h3>Mashroom</h3>
+            <div class="Price">$19.99 <span>$124.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/menu-4.png" alt="menu" />
+            <span class="menu-category">BURGER</span>
+            <h3>Triplex</h3>
+            <div class="Price">$15.99 <span>$19.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! Menu finish -->
+    <!--! Product start -->
+    <section class="Products" id="products">
+      <h1 class="heading">our <span>products</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <span class="title">Mini Burger</span>
+            <a href="#" class="name">Bacon Burger</a>
+          </div>
+          <div class="image">
+            <img src="images/product-1.png" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$6.00</b>
+              <span class="amount"> 110gr / 300cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="title">Dark Burger</span>
+            <a href="#" class="name">Dark+cheese Burger</a>
+          </div>
+          <div class="image">
+            <img src="images/product-2.png" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$9.00</b>
+              <span class="amount"> 120gr / 350cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box dark-bg">
+          <div class="box-head">
+            <span class="title">Double Dark Burger</span>
+            <a href="#" class="name">Double Burger</a>
+          </div>
+          <div class="image">
+            <img src="images/dark-product.jpg" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$12.00</b>
+              <span class="amount"> 220gr / 600cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! About us start -->
+    <section class="about" id="about">
+      <h1 class="heading">about <span>us</span></h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/about.jpg" alt="about" />
+        </div>
+        <div class="content">
+          <h3>The secret of this special taste</h3>
+          <p>
+            Start cooking on high heat (hot pan-grill), continue by lowering it
+            a little.
+          </p>
+          <p>
+            Cast iron pans retain heat well, ensuring that the meatballs are
+            cooked evenly without sticking or falling apart.
+          </p>
+          <p>
+            To avoid losing water, use tongs instead of forks when turning and
+            do not press the meatballs.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!--! About us finish -->
+    <!--! Review start -->
+    <section class="review" id="review">
+      <h1 class="heading">Customer's <span> Review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/quote.png" alt="quote" />
+          <p>
+            "Definitely a must-try, the burgers are filling and so delicious.
+            Don't forget the fried Mac&Cheese balls! Really Wonderful !"
+          </p>
+          <img src="images/avatar-1.png" alt="avatar" class="user" />
+          <h3>Taylor Becker</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/quote.png" alt="quote" />
+          <p>
+            "They have homemade hamburgers. Their employees provide fast
+            service. They provide takeaway services to homes and workplaces."
+          </p>
+          <img src="images/avatar-2.png" alt="avatar" class="user" />
+          <h3>John Due</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/quote.png" alt="quote" />
+          <p>
+            "As a hamburger gourmet couple, this is the burger place we tried
+            and it took the first place on our list.You should go and try it"
+          </p>
+          <img src="images/avatar-3.png" alt="avatar" class="user" />
+          <h3>Lisa Darambula</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! Review finish -->
+    <!--! Contact start -->
+    <section class="contact" id="contact">
+      <h1 class="heading">Contact <span> us</span></h1>
+      <div class="row">
+        <iframe
+        class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.0503572874727!2d6.955705976091483!3d50.94128175190265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf2507ee4f683d%3A0xc1ae03e945154d0d!2sDomkloster%204%2C%2050667%20K%C3%B6ln%2C%20Almanya!5e0!3m2!1str!2str!4v1724415959634!5m2!1str!2str"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form>
+          <h3>Get In Touch</h3>
+
+          <div class="inputBOX">
+            <i class="fas fa-user"></i>                        <!--! 264-267  user girişi -->
+            <input type="text"placeholder="name"/>
+          </div>
+
+          <div class="inputBOX">
+            <i class="fas fa-envelope"></i>
+            <input type="email"placeholder="email"/>             <!--! 268-271 email girişi -->
+          </div>
+
+          <div class="inputBOX">                                          <!--! . -->
+            <i class="fas fa-phone"></i>                              <!--! 272-275 phone girişi -->
+            <input type="number"placeholder="number"/>                    <!--! . -->
+          </div>                        
+                                         
+          <input type="submit" class="btn"value="Contact Now"></input>            <!--! buton -->
+        </form>
+      </div>
+    </section>
+    <!--! contact finish -->
+    <!--! blogs start -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Our <span> Blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-1.jpg" alt="blog" />
+                </div>
+               <div class="contect">
+                <a href="#" class="title">How to Make Satisfying Burgers?</a>
+                <span>By admin / 10st may, 2023</span>
+               <p>
+            "Cut the hamburger buns in half, place the patty in between, squeeze ketchup and mayonnaise on top, and put the tomatoes, onions, pickles and lettuce."
+          </p>
+          <a href="#"  class="btn">Read More</a>
+        </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-2.jpg" alt="blog" />
+            </div>
+           <div class="contect">
+            <a href="#" class="title">How to Make Small Burgers?</a>
+            <span>By admin / 13st nov, 2020</span>
+           <p>
+        "It is usually served with the addition of various ingredients such as ketchup, mayonnaise, pickles, onions, tomatoes, mustard and so on. !"
+      </p>
+      <a href="#"  class="btn">Read More</a>
+    </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="images/blog-3.jpg" alt="blog" />
+        </div>
+       <div class="contect">
+        <a href="#" class="title">How to Make Delicious Burgers?</a>
+        <span>By admin / 1st july, 2021</span>
+       <p>
+    "-The ones made with chicken meat (chicken burger) are also widely consumed. Also, the ones with cheese (cheeseburger) are made."
+  </p>
+  <a href="#"  class="btn">Read More</a>
+</div>
+</div>
+        </div>
+    </section>
+      <!--! blogs finish -->
+        <!--! footer start -->
+           <section class="footer">
+          <div class="search"> 
+            <input type="text" class="search-input" placeholder="text'in promptexti">
+            <button class="btn btn-primary">search</button>
+        </div>  
+         <div class="share">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a> 
+          <a href="#" class="fab fa-youtube"></a> 
+          <a href="#" class="fab fa-twitter"></a> 
+          <a href="#" class="fab fa-whatsapp"></a> 
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+         </div>
+         <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Review</a>
+          <a href="#">Contact</a>
+          <a href="#">Blogs</a>
+         </div>
+         <div class="credit"> created by <span> Burcu Sahin </span> | All rights reserved </div>
+
+
+          </section>
+
+        <script src="js/script.js">
+
+        </script>
+  </body>
+</html>
